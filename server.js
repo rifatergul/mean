@@ -1,17 +1,11 @@
 'use strict';
 
-/*
-var cl = console.log;
-console.log = function(){
-  console.trace();
-  cl.apply(console,arguments);
-};
-*/
 
 // Requires meanio .
 var mean = require('meanio');
 var cluster = require('cluster');
 var deferred = require('q').defer();
+
 
 
 // Code to run if we're in the master process or if we are not in debug mode/ running tests
